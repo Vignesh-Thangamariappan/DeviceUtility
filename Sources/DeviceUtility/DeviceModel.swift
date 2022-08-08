@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// This is a small change that I want to commit
 public enum DeviceModel: String {
     
     //Simulator
