@@ -18,6 +18,11 @@ public enum DeviceModel: String {
          iPod3              = "iPod 3",
          iPod4              = "iPod 4",
          iPod5              = "iPod 5",
+         iPodTouch5         = "iPod Touch 5",
+         iPodTouch6         = "iPod Touch 6",
+         iPodTouch7         = "iPod Touch 7",
+    
+          
          
          //iPad
          iPad2              = "iPad 2",
@@ -25,6 +30,7 @@ public enum DeviceModel: String {
          iPad4              = "iPad 4",
          iPad5              = "iPad 5", //iPad 2017
          iPad6              = "iPad 6", //iPad 2018
+         iPad7              = "iPad 7",
          iPad8              = "iPad 8",
          iPad9              = "iPad 9",
          
@@ -37,20 +43,24 @@ public enum DeviceModel: String {
          iPadMini6          = "iPad Mini 6",
          
          //iPad Pro
-         iPadPro9_7         = "iPad Pro 9.7\"",
-         iPadPro10_5        = "iPad Pro 10.5\"",
-         iPadPro11          = "iPad Pro 11\"",
-         iPadPro12_9        = "iPad Pro 12.9\"",
-         iPadPro2_12_9      = "iPad Pro 2 12.9\"",
-         iPadPro3_12_9      = "iPad Pro 3 12.9\"",
-         iPadPro4_11        = "iPad Pro (11-inch) 4",
-         iPadPro4_12_9      = "iPad Pro (12.9-inch) 4",
+         
+         iPadPro9Inch       = "iPadPro 9Inch",
+         iPadPro12Inch      = "iPadPro 12Inch",
+         iPadPro12Inch2     = "iPadPro 2 12Inch",
+         iPadPro10Inch      = "iPadPro 10Inch",
+         iPadPro11Inch      = "iPadPro 11Inch",
+         iPadPro12Inch3      = "iPadPro 3 12Inch",
+         iPadPro11Inch2      = "iPadPro 2 11Inch",
+         iPadPro12Inch4      = "iPadPro 4 12Inch",
+         iPadPro11Inch3      = "iPadPro 3 11Inch",
+         iPadPro12Inch5      = "iPadPro 5 12Inch",
          
          //iPad Air
          iPadAir            = "iPad Air",
          iPadAir2           = "iPad Air 2",
          iPadAir3           = "iPad Air 3",
          iPadAir4           = "iPad Air 4",
+         iPadAir5           = "iPad Air 5",
          
          
          //iPhone
@@ -79,10 +89,12 @@ public enum DeviceModel: String {
          iPhone12           = "iPhone 12",
          iPhone12Pro        = "iPhone 12 Pro",
          iPhone12ProMax     = "iPhone 12 Pro Max",
+         iPhoneSE2          = "iPhone SE 2",
          iPhone13           = "iPhone 13",
          iPhone13Pro        = "iPhone 13 Pro",
          iPhone13ProMax     = "iPhone 13 Pro Max",
          iPhone13Mini       = "iPhone 13 Mini",
+         iPhoneSE3          = "IPhone SE 3",
          
          //Apple TV
          AppleTV            = "Apple TV",

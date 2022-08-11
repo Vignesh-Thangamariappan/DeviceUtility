@@ -33,6 +33,8 @@ public class DeviceUtility {
             "iPod3,1": .iPod3,
             "iPod4,1": .iPod4,
             "iPod5,1": .iPod5,
+            "iPod7,1": .iPodTouch6,
+            "iPod9,1": .iPodTouch7,
             
             //iPad
             "iPad2,1": .iPad2,
@@ -49,6 +51,8 @@ public class DeviceUtility {
             "iPad6,12": .iPad5,
             "iPad7,5": .iPad6, //iPad 2018
             "iPad7,6": .iPad6,
+            "iPad7,11": .iPad7,
+            "iPad7,12": .iPad7,
             "iPad11,6": .iPad8,
             "iPad11,7": .iPad8,
             
@@ -68,26 +72,26 @@ public class DeviceUtility {
             "iPad11,2": .iPadMini5,
             
             //iPad Pro
-            "iPad6,3": .iPadPro9_7,
-            "iPad6,4": .iPadPro9_7,
-            "iPad7,3": .iPadPro10_5,
-            "iPad7,4": .iPadPro10_5,
-            "iPad6,7": .iPadPro12_9,
-            "iPad6,8": .iPadPro12_9,
-            "iPad7,1": .iPadPro2_12_9,
-            "iPad7,2": .iPadPro2_12_9,
-            "iPad8,1": .iPadPro11,
-            "iPad8,2": .iPadPro11,
-            "iPad8,3": .iPadPro11,
-            "iPad8,4": .iPadPro11,
-            "iPad8,5": .iPadPro3_12_9,
-            "iPad8,6": .iPadPro3_12_9,
-            "iPad8,7": .iPadPro3_12_9,
-            "iPad8,8": .iPadPro3_12_9,
-            "iPad8,9": .iPadPro4_11,
-            "iPad8,10": .iPadPro4_11,
-            "iPad8,11": .iPadPro4_12_9,
-            "iPad8,12": .iPadPro4_12_9,
+            "iPad6,3": .iPadPro9Inch,
+            "iPad6,4": .iPadPro9Inch,
+            "iPad7,3": .iPadPro10Inch,
+            "iPad7,4": .iPadPro10Inch,
+            "iPad6,7": .iPadPro12Inch,
+            "iPad6,8": .iPadPro12Inch,
+            "iPad7,1": .iPadPro12Inch2,
+            "iPad7,2": .iPadPro12Inch2,
+            "iPad8,1": .iPadPro11Inch,
+            "iPad8,2": .iPadPro11Inch,
+            "iPad8,3": .iPadPro11Inch,
+            "iPad8,4": .iPadPro11Inch,
+            "iPad8,5": .iPadPro12Inch3,
+            "iPad8,6": .iPadPro12Inch3,
+            "iPad8,7": .iPadPro12Inch3,
+            "iPad8,8": .iPadPro12Inch3,
+            "iPad8,9": .iPadPro11Inch3,
+            "iPad8,10": .iPadPro11Inch3,
+            "iPad8,11": .iPadPro12Inch4,
+            "iPad8,12": .iPadPro12Inch4,
             
             //iPad Air
             "iPad4,1": .iPadAir,
@@ -99,6 +103,8 @@ public class DeviceUtility {
             "iPad11,4": .iPadAir3,
             "iPad13,1": .iPadAir4,
             "iPad13,2": .iPadAir4,
+            "iPad13,16": .iPadAir5,
+            "iPad13,17": .iPadAir5,
             
             //iPhone
             "iPhone3,1": .iPhone4,
@@ -133,6 +139,7 @@ public class DeviceUtility {
             "iPhone12,1": .iPhone11,
             "iPhone12,3": .iPhone11Pro,
             "iPhone12,5": .iPhone11ProMax,
+            "iPhone12,8": .iPhoneSE2,
             "iPhone13,1": .iPhone12Mini,
             "iPhone13,2": .iPhone12,
             "iPhone13,3": .iPhone12Pro,
@@ -141,6 +148,7 @@ public class DeviceUtility {
             "iPhone14,3": .iPhone13ProMax,
             "iPhone14,4": .iPhone13Mini,
             "iPhone14,5": .iPhone13,
+            "iPhone14,6": .iPhoneSE3,
             "iPad12,2": .iPad9,
             "iPad14,2": .iPadMini6,
             
@@ -154,10 +162,11 @@ public class DeviceUtility {
         }
         
         
-        if model == .simulator, let simModelCode = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"], let simModel = models[simModelCode] {
-            return simModel
-        } else {
+        guard model == .simulator,
+           let simModelCode = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"],
+           let simModel = models[simModelCode] else {
             return model
         }
+        return simModel
     }
 }
