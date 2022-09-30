@@ -26,7 +26,12 @@ public extension DeviceUtility {
             .iPhone13,
             .iPhone13Pro,
             .iPhone13ProMax,
-            .iPhone13Mini
+            .iPhone13Mini,
+            .iPhone14,
+            .iPhone14Pro,
+            .iPhone14Plus,
+            .iPhone14ProMax
+            
         ]
     }
     

@@ -76,6 +76,7 @@ extension DeviceUtility {
         case .iPhone12Mini: return [.wide, .ultraWide]
         case .iPhone13: return [.wide, .ultraWide]
         case .iPhone13Mini: return [.wide, .ultraWide]
+        case .iPhone14: return [.wide, .ultraWide]
         case .iPadPro11Inch2: return [.wide, .ultraWide]
         case .iPadPro12Inch4: return [.wide, .ultraWide]
         case .iPadPro11Inch3: return [.wide, .ultraWide]
@@ -86,6 +87,7 @@ extension DeviceUtility {
         case .iPhone12ProMax: return [.wide, .telephoto, .ultraWide]
         case .iPhone13Pro: return [.wide, .telephoto, .ultraWide]
         case .iPhone13ProMax: return [.wide, .telephoto, .ultraWide]
+        case .iPhone14Pro,.iPhone14Pro, .iPhone14ProMax: return [.wide, .telephoto, .ultraWide]
         default: return []
         }
     }
@@ -103,7 +105,7 @@ extension DeviceUtility {
     
     /// All devices that feature a wide camera
     static var allDevicesWithWideCamera: [DeviceModel] {
-        return [.iPodTouch5, .iPodTouch6, .iPodTouch7, .iPhone4, .iPhone4S, .iPhone5, .iPhone5C, .iPhone5S, .iPhone6, .iPhone6Plus, .iPhone6S, .iPhone6SPlus, .iPhone7, .iPhone7Plus, .iPhoneSE, .iPhone8, .iPhone8Plus, .iPhoneX, .iPhoneXS, .iPhoneXSMax, .iPhoneXR, .iPhone11, .iPhone11Pro, .iPhone11ProMax, .iPhoneSE2, .iPhone12, .iPhone12Mini, .iPhone12Pro, .iPhone12ProMax, .iPhone13, .iPhone13Mini, .iPhone13Pro, .iPhone13ProMax, .iPhoneSE3, .iPad2, .iPad3, .iPad4, .iPadAir, .iPadAir2, .iPad5, .iPad6, .iPadAir3, .iPad7, .iPad8, .iPad9, .iPadAir4, .iPadAir5, .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5, .iPadMini6, .iPadPro9Inch, .iPadPro12Inch, .iPadPro12Inch2, .iPadPro10Inch, .iPadPro11Inch, .iPadPro12Inch3, .iPadPro11Inch2, .iPadPro12Inch4, .iPadPro11Inch3, .iPadPro12Inch5]
+        return [.iPodTouch5, .iPodTouch6, .iPodTouch7, .iPhone4, .iPhone4S, .iPhone5, .iPhone5C, .iPhone5S, .iPhone6, .iPhone6Plus, .iPhone6S, .iPhone6SPlus, .iPhone7, .iPhone7Plus, .iPhoneSE, .iPhone8, .iPhone8Plus, .iPhoneX, .iPhoneXS, .iPhoneXSMax, .iPhoneXR, .iPhone11, .iPhone11Pro, .iPhone11ProMax, .iPhoneSE2, .iPhone12, .iPhone12Mini, .iPhone12Pro, .iPhone12ProMax, .iPhone13, .iPhone13Mini, .iPhone13Pro, .iPhone13ProMax, .iPhoneSE3, .iPhone14, .iPhone14Pro,.iPhone14Pro, .iPhone14ProMax, .iPad2, .iPad3, .iPad4, .iPadAir, .iPadAir2, .iPad5, .iPad6, .iPadAir3, .iPad7, .iPad8, .iPad9, .iPadAir4, .iPadAir5, .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5, .iPadMini6, .iPadPro9Inch, .iPadPro12Inch, .iPadPro12Inch2, .iPadPro10Inch, .iPadPro11Inch, .iPadPro12Inch3, .iPadPro11Inch2, .iPadPro12Inch4, .iPadPro11Inch3, .iPadPro12Inch5]
     }
     
     /// All devices that feature a telephoto camera
