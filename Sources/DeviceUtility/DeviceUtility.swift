@@ -149,6 +149,10 @@ public class DeviceUtility {
             "iPhone14,4": .iPhone13Mini,
             "iPhone14,5": .iPhone13,
             "iPhone14,6": .iPhoneSE3,
+            "iPhone14,7": .iPhone14,
+            "iPhone14,8": .iPhone14Plus,
+            "iPhone15,2": .iPhone14Pro,
+            "iPhone15,3": .iPhone14ProMax,
             "iPad12,2": .iPad9,
             "iPad14,2": .iPadMini6,
             
