@@ -31,7 +31,6 @@ public extension DeviceUtility {
             .iPhone14Pro,
             .iPhone14Plus,
             .iPhone14ProMax
-            
         ]
     }
     
@@ -87,7 +86,14 @@ public extension DeviceUtility {
     
     /// Returns whether the device is an iPad (real or
     var isPad: Bool {
-                    return isOneOf(DeviceUtility.allPads)
+        return isOneOf(DeviceUtility.allPads)
+    }
+    
+    var isMac: Bool {
+    #if targetEnvironment(macCatalyst)
+        return true
+    #endif
+        return false
     }
     
     /// Returns whether the device is any of the simulator

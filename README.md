@@ -39,6 +39,14 @@ DeviceUtility.currentDevice.model
 DeviceUtility.currentDevice.hasNotch
 ```
 
+### Identify whether the current device is a phone, pad or mac(for catalyst).
+
+```
+DeviceUtility.currentDevice.isPhone
+DeviceUtility.currentDevice.isPad
+DeviceUtility.currentDevice.isMac
+```
+
 ## Installation
 
 DeviceUtility is available through [SPM](https://swift.org/package-manager). To install
