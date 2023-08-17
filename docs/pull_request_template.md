@@ -1,28 +1,34 @@
 ## What's New
-### Context:
 
-Context of what this change is and why it was made
+### Context
 
-### Proposed Changes:
+Provide a clear overview of the context behind this change and the reasons for its implementation.
 
-What's new on the PR? What are the updated you have done? Keep it concise
+### Proposed Changes
 
-### Deployment/Consumption Considerations:
+Summarize the key changes introduced by this pull request in a concise manner.
 
-AnyConsiderations for Release. Should it be targeted to specific set? Do we need a Feature Flag?
+### Deployment/Consumption Considerations
 
-### Validation:
+Discuss any specific deployment or consumption considerations that reviewers and stakeholders should be aware of. If applicable, address whether this change should be targeted to a specific audience or if a feature flag is needed.
 
-How can the reviewer validate your changes?
+### Validation
 
-### Rollback:
+Outline how the reviewer can validate the changes effectively. Include details about functional testing, UI/UX checks, performance verification, and any other relevant validation procedures.
 
-What to do incase there is an issue because of this change?
+### Rollback
 
-## Checklist before requesting a review
-- [ ] I have performed a self-review of my code
-- [ ] If it is a core feature, I have added thorough tests.
-- [ ] Do we need to implement analytics?
-- [ ] My changes generate no new warnings
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+In case unforeseen issues arise due to these changes, provide step-by-step instructions on how to roll back to the previous state. Ensure clarity on reverting code, configuration changes, and any associated processes.
+
+## Checklist Before Requesting a Review
+
+Please ensure the following before submitting the pull request for review:
+
+- [ ] Conducted a comprehensive self-review of the code changes.
+- [ ] Included thorough tests, especially if this involves a core feature.
+- [ ] Considered the implementation of analytics, if required.
+- [ ] Ensured that the code generates no new warnings.
+- [ ] Confirmed that both new and existing unit tests pass successfully on your local environment.
+- [ ] Verified that any dependent changes have been integrated and released in downstream modules.
+
+Your attention to these points will greatly facilitate the review process and contribute to a successful merge.
